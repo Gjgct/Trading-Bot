@@ -74,3 +74,5 @@ Thanks to all contributors and users for making this project possible. If you fi
 - trading software 
 - trading strategies 2025 
 - tradingview crypto integration
+- charts
+- analytics
